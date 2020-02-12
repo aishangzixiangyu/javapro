@@ -1,10 +1,15 @@
 package com.neudu.bean1;
 
-public class Student {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Student implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Integer id;
     private String name;
     private Integer age;
     private String  grade;
+
 
     public Integer getId() {
         return id;
@@ -36,5 +41,15 @@ public class Student {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", grade='" + grade + '\'' +
+                '}';
     }
 }
