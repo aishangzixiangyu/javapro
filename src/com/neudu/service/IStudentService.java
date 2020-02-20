@@ -9,5 +9,5 @@ public interface IStudentService {
     int add(Student student);
     int update(Student student);
     int del(int id);
-    Student queryone(int id);
+
 }

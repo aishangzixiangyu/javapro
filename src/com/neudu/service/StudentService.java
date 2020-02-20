@@ -28,8 +28,4 @@ public class StudentService implements IStudentService {
         return studentDao.del(id);
     }
 
-    @Override
-    public Student queryone(int id) {
-        return null;
-    }
 }
